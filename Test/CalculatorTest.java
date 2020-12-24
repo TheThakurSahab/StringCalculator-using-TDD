@@ -7,5 +7,9 @@ public class CalculatorTest {
     public void shouldReturnZeroIfStringIsEmpty(){
         assertEquals(0, Calculator.add(""));
     }
+    @Test
+    public void shouldReturnNumberIfStringHaveNumber(){
+        assertEquals(1,Calculator.add("1"));
+    }
 
 }
