@@ -1,5 +1,7 @@
 import org.junit.Test;
 
+import javax.swing.plaf.PanelUI;
+
 import static org.junit.Assert.*;
 
 public class CalculatorTest {
@@ -7,13 +9,19 @@ public class CalculatorTest {
     public void shouldReturnZeroIfStringIsEmpty(){
         assertEquals(0, Calculator.Add(""));
     }
+
     @Test
     public void shouldReturnNumberIfStringHaveNumber(){
         assertEquals(1,Calculator.Add("1"));
     }
+
     @Test
     public void shouldReturnSumIfStringHaveTwoNumberDelimitedByComma(){
         assertEquals(8, Calculator.Add("5,3"));
+    }
+    @Test
+    public void shouldReturnSumIfStringHaveMultipleNumber(){
+        assertEquals(12,Calculator.Add("6,4,2"));
     }
 
 }
