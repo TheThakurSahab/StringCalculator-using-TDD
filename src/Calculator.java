@@ -7,7 +7,7 @@ public class Calculator {
             return toInt(input[0]) + toInt(input[1]);
         }
         else {
-            return Integer.parseInt(text);
+            return toInt(text);
         }
     }
     public static int toInt(String input){
