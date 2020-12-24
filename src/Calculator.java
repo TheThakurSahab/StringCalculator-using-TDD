@@ -1,5 +1,5 @@
 public class Calculator {
-    public static int add(String text){
+    public static int Add(String text){
         if(text.isEmpty()){
             return 0;
         } else {
