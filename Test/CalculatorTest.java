@@ -36,9 +36,14 @@ public class CalculatorTest {
     public void shouldReturnSumIfStringHaveMultipleNumbersDelimitedByCommaOrNewLine(){
         assertEquals(22, Calculator.Add("5,2,12\n3"));
     }
-    @Test
-    public void shouldReturnSumIfStringHaveCustomDelimiter(){
-        assertEquals(20, Calculator.Add("//;\n5,15"));
-    }
+
+//    @Test
+//    public void shouldThrowsExceptionIfInputContainsNegativeValues(){
+//
+//    }
+//    @Test
+//    public void shouldReturnSumIfStringHaveCustomDelimiter(){
+//        assertEquals(20, Calculator.Add("//;\n5,15"));
+//    }
 
 }
